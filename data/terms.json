@@ -297,5 +297,17 @@
   },
   "@treasury_rules.vested_compensation_lock": {
     "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
+  },
+  "@worker_advocacy": {
+    "definition": "workers have priority in compensation disputes"
+  },
+  "@exploitation_presumption": {
+    "definition": "disputes should default to worker-favorable interpretations unless clear evidence contradicts"
+  },
+  "@immediate_compensation": {
+    "definition": "the charter should mandate maximum payment timelines (e.g., 14 days from verified work) with automatic penalties for delays"
+  },
+  "@proof_before_payment_rule": {
+    "definition": "Require that all wage-band updates, COLA disbursements, and dispute-resolution awards flow through the forthcoming @proof_before_payment_rule checkpoints. Panels must document the labor evidence and audit confirmation before authorizing payments, reconciling @labor_primacy and ensuring COLA remains contribution-anchored."
   }
 }
