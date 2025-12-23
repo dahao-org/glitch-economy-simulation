@@ -279,5 +279,14 @@
     "vested_compensation_lock_rule": {
       "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
     }
+  },
+  "@no_retroactive_dilution": {
+    "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
+  },
+  "@prospective_only_treasury_adjustments": {
+    "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
+  },
+  "@vested_compensation_lock": {
+    "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
   }
 }
