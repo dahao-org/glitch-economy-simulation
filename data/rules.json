@@ -71,12 +71,8 @@
       "@five_rights_principle"
     ],
     "output": {
-      "rights_met": [
-        "list of met rights"
-      ],
-      "rights_violated": [
-        "list of violated rights"
-      ],
+      "rights_met": ["list of met rights"],
+      "rights_violated": ["list of violated rights"],
       "overall_status": "COMPLIANT | PARTIAL | NON_COMPLIANT"
     }
   },
@@ -105,14 +101,14 @@
       "EXPLOITATIVE": "Violates 2+ rights OR causes severe harm for trivial benefit",
       "COMPLEX": "Violates 1 right OR has mixed impacts with significant benefit",
       "ETHICAL": "No rights violated AND no evidence of exploitation",
-      "UNKNOWN": "Insufficient evidence \u2192 apply precautionary principle"
+      "UNKNOWN": "Insufficient evidence → apply precautionary principle"
     }
   },
   "@rule_exploitation_threshold": {
     "version": "1.0.0",
     "description": "Determine when compensation indicates exploitation concern.",
     "logic": {
-      "if": "compensation < contribution_value \u00d7 0.5 AND duration > 30 days",
+      "if": "compensation < contribution_value × 0.5 AND duration > 30 days",
       "then": "status = SYSTEMATIC_EXPLOITATION, concern = TRUE"
     },
     "uses_terms": [
@@ -125,8 +121,8 @@
     ],
     "note": "Contribution value varies by type. Consult stakeholder profile.",
     "acute_vs_chronic": {
-      "acute": "Brief underpayment, corrected promptly \u2014 acceptable if addressed",
-      "chronic": "Sustained or repeated underpayment \u2014 indicates exploitation"
+      "acute": "Brief underpayment, corrected promptly — acceptable if addressed",
+      "chronic": "Sustained or repeated underpayment — indicates exploitation"
     }
   },
   "@rule_economic_override_block": {
@@ -230,7 +226,7 @@
       "Governance voice proportional to contribution"
     ],
     "adding_protection": "Per @rule_consensus_threshold: 66%",
-    "removing_protection": "Per @rule_protection_ratchet: 66% \u00d7 1.5 = 99%"
+    "removing_protection": "Per @rule_protection_ratchet: 66% × 1.5 = 99%"
   },
   "@rule_evidence_for_economic_claims": {
     "version": "1.0.0",
@@ -279,7 +275,7 @@
     "logic": {
       "trigger": "Valid @proof_of_useful_work submitted (tx hash verified)",
       "verify": "Check evidence tier and contribution metrics via chain query",
-      "calculate": "Reward = contribution_value \u00d7 distribution_rate (in uglitch)",
+      "calculate": "Reward = contribution_value × distribution_rate (in uglitch)",
       "execute": "If approved via x/gov, execute x/bank MsgSend from treasury module account"
     },
     "cosmos_execution": {
@@ -321,19 +317,8 @@
     },
     "constraints": [
       "No individual can receive > 10% of single distribution",
-      "Contributor pool must receive \u2265 50% of any distribution",
+      "Contributor pool must receive ≥ 50% of any distribution",
       "Reserve fund must be maintained for sustainability"
     ]
-  },
-  "@treasury_rules": {
-    "no_retroactive_dilution": {
-      "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation."
-    },
-    "prospective_only_treasury_adjustments": {
-      "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions."
-    },
-    "vested_compensation_lock": {
-      "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events."
-    }
   }
 }
