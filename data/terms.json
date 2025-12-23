@@ -231,25 +231,42 @@
     "tiers": {
       "tier_A_on_chain": {
         "description": "Cryptographically verifiable on Cosmos chain via transaction hash",
-        "examples": ["GPU compute logs (validator blocks)", "Signed commits (tx memo)", "Transaction processing (block height)"],
+        "examples": [
+          "GPU compute logs (validator blocks)",
+          "Signed commits (tx memo)",
+          "Transaction processing (block height)"
+        ],
         "verification": "Query via RPC endpoint or block explorer"
       },
       "tier_A_signed": {
         "description": "Digitally signed with wallet key and auditable",
-        "examples": ["Code contributions (signed tx)", "Deliverable submissions (IPFS hash in tx memo)"],
+        "examples": [
+          "Code contributions (signed tx)",
+          "Deliverable submissions (IPFS hash in tx memo)"
+        ],
         "verification": "Verify signature against glitch1... address"
       },
       "tier_B": {
         "description": "Institutionally verified via multi-sig attestation",
-        "examples": ["DAO attestation", "Validator set confirmation"],
+        "examples": [
+          "DAO attestation",
+          "Validator set confirmation"
+        ],
         "verification": "Multi-sig transaction from designated attestors"
       },
       "tier_C": {
         "description": "Self-reported with community attestation via governance vote",
-        "examples": ["Hours logged", "Task completion claims"],
+        "examples": [
+          "Hours logged",
+          "Task completion claims"
+        ],
         "verification": "x/gov proposal with quorum approval"
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
-  }
+  },
+  "FairCompensationCharter": "A foundational document outlining principles and mechanisms for equitable compensation practices, including transparent wage bands, automatic cost-of-living adjustments, and structured dispute resolution.",
+  "WageBands": "Publicly documented ranges of compensation for specific roles or job categories, ensuring transparency and clarity in pay structures.",
+  "CostOfLivingAdjustment (COLA)": "An annual adjustment to compensation, indexed to a rolling inflation metric, designed to maintain purchasing power. Implementation includes a gradual phase-in mechanism during periods of high macro volatility.",
+  "CompensationDisputeResolutionPanel": "An impartial body comprising representatives from labor, management, and finance stakeholders, empowered to fast-track and resolve compensation-related grievances through a structured, transparent process."
 }
