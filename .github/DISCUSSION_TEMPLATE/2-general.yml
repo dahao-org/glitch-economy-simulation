@@ -1,0 +1,47 @@
+title: ""
+labels: ["discussion", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 💬 General Discussion
+        
+        This is for open-ended discussions, questions, and community conversations.
+        
+        For governance proposals, please use the **Governance Proposal** template instead.
+        
+        ---
+
+  - type: dropdown
+    id: topic_type
+    attributes:
+      label: Topic Type
+      options:
+        - "Question - I need help understanding something"
+        - "Idea - Early stage thinking, not ready for formal proposal"
+        - "Meta - About the governance process itself"
+        - "Technical - Implementation details"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Your Message
+      description: Share your thoughts, questions, or ideas
+      placeholder: |
+        What's on your mind?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context (optional)
+      description: Any relevant background, links, or references
+      placeholder: |
+        Related discussions: #123
+        External links: https://...
+    validations:
+      required: false

@@ -1,42 +1,99 @@
-name: Glitch Governance Node
+name: DAHAO Governance Node
 
 on:
-  # Run every 6 hours
+  # Automatic: Run every 6 hours
   schedule:
     - cron: '0 */6 * * *'
-
-  # Allow manual trigger from GitHub Actions UI
+  
+  # Manual: User can trigger from Actions tab
   workflow_dispatch:
+    inputs:
+      action:
+        description: 'What should the node do?'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto        # Let AI decide
+          - vote_only   # Only cast votes
+          - propose     # Create new proposal
+          - respond     # Only respond to existing
 
-  # Also run on push to main for testing
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/node.py'
-      - 'data/principles.json'
-      - '.github/workflows/node.yml'
+  # Trigger on discussion events (optional - for faster response)
+  # discussion:
+  #   types: [created, edited]
+  # discussion_comment:
+  #   types: [created]
+
+permissions:
+  contents: read
+  discussions: write
+  issues: write
+
+env:
+  MAIN_REPO: "dahao-org/glitch-economy-simulation"
+  PYTHON_VERSION: "3.11"
 
 jobs:
-  vote:
-    name: Analyze & Vote on Proposals
+  govern:
+    name: Run Governance Node
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
+      # 1. Checkout this fork (contains personal values)
+      - name: Checkout Fork
         uses: actions/checkout@v4
+        with:
+          path: fork
 
-      - name: Set up Python
+      # 2. Checkout main repo (shared law)
+      - name: Checkout Main Repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.MAIN_REPO }}
+          path: main
+          token: ${{ secrets.GH_PAT }}
+
+      # 3. Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install dependencies
-        run: pip install requests
+      # 4. Install dependencies
+      - name: Install Dependencies
+        run: |
+          pip install requests python-dotenv
 
+      # 5. Run the governance node
       - name: Run Governance Node
-        run: python src/node.py
         env:
+          # GitHub token for API access (user must add GH_PAT secret)
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          
+          # LLM API Keys (user adds their own)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          
+          # Optional: Wallet for future token rewards
           WALLET_ADDRESS: ${{ secrets.WALLET_ADDRESS }}
+          
+          # Paths
+          FORK_PATH: ./fork
+          MAIN_PATH: ./main
+          
+          # Action mode (from manual trigger or default)
+          ACTION_MODE: ${{ github.event.inputs.action || 'auto' }}
+          
+        run: python fork/src/node.py
+
+      # 6. Log results (optional)
+      - name: Upload Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: governance-log-${{ github.run_number }}
+          path: |
+            fork/*.log
+          retention-days: 7

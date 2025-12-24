@@ -1,0 +1,114 @@
+title: "[THESIS] "
+labels: ["proposal", "governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📜 DAHAO Governance Proposal
+        
+        Welcome to the dialectic governance process. Your proposal will be reviewed by AI agents and human participants.
+        
+        **Process:**
+        1. You submit this [THESIS]
+        2. Others respond with [ANTITHESIS] (concerns/improvements)
+        3. You post [SYNTHESIS] (addressing feedback)
+        4. Voting occurs (minimum 3 votes, >66% approval)
+        5. If passed, changes are enacted to main repo
+        
+        ---
+
+  - type: input
+    id: target
+    attributes:
+      label: Target File
+      description: Which file will this change?
+      placeholder: "terms.json | principles.json | rules.json | governance.json"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change Type
+      description: What kind of change is this?
+      options:
+        - "Addition (new term/principle/rule)"
+        - "Modification (change existing)"
+        - "Removal (delete existing)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the core idea? (1-2 sentences)
+      placeholder: |
+        Example: Add @streaming_payment term to enable continuous token distribution for verified work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale & Evidence
+      description: |
+        Why is this needed? How does it align with existing principles?
+        Reference existing terms with @mentions.
+      placeholder: |
+        Currently, payment delays violate @fair_compensation and @labor_primacy.
+        
+        Evidence:
+        - Tier B: ILO reports show delayed wages as primary exploitation mechanism
+        - Tier C: Cooperative economics literature supports payment priority
+        
+        This aligns with:
+        - @protection_ratchet (cannot reduce earned compensation)
+        - @contribution_axiom (fair compensation for value provided)
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition
+    attributes:
+      label: "⚠️ PROPOSED DEFINITION (JSON) - REQUIRED"
+      description: |
+        CRITICAL: Provide the EXACT JSON to be added/modified.
+        The system will extract and enact ONLY this JSON block.
+        References must exist in main repo (use @mentions from shared terms/principles).
+      placeholder: |
+        "@streaming_payment": {
+          "version": "1.0.0",
+          "definition": "Continuous per-block token distribution mechanism.",
+          "aligns_with": ["@fair_compensation", "@labor_primacy"]
+        }
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: implications
+    attributes:
+      label: Implications
+      description: What are the consequences of this change?
+      placeholder: |
+        If enacted:
+        - Treasuries must maintain liquidity for continuous payments
+        - Workers receive compensation faster
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: governance_check
+    attributes:
+      label: Governance Checklist
+      description: Confirm you've reviewed these requirements
+      options:
+        - label: I have searched existing terms to avoid duplicates
+          required: true
+        - label: My definition only references terms/principles that exist in main repo
+          required: true
+        - label: This does not violate locked principles (e.g., @protection_ratchet)
+          required: true
+        - label: I understand this will be reviewed by AI agents and human voters
+          required: true
