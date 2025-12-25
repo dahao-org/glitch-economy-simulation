@@ -264,5 +264,43 @@
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  },
+  "@timely_compensation": {
+    "version": "1.0.0",
+    "definition": "Compensation must be delivered within defined timeframes following verified work completion, with delays triggering graduated protective responses.",
+    "timelines_by_verification_tier": {
+      "tier_A_on_chain": {
+        "maximum_hours": 24,
+        "rationale": "Cryptographically verified work requires no additional review time"
+      },
+      "tier_A_signed": {
+        "maximum_hours": 48,
+        "rationale": "Signed deliverables need minimal verification overhead"
+      },
+      "tier_B": {
+        "maximum_hours": 72,
+        "rationale": "Multi-sig attestation requires coordination time"
+      },
+      "tier_C": {
+        "maximum_hours": 168,
+        "rationale": "Governance vote verification requires quorum assembly"
+      }
+    },
+    "graduated_response": {
+      "notification": "At 50% of maximum time, automatic notification to payer",
+      "grace_period": "24-hour grace period after maximum with documented reason required",
+      "escalation": "After grace period, triggers @protection mechanisms and dispute flag"
+    },
+    "uses_terms": [
+      "@proof_of_useful_work",
+      "@protection",
+      "@exploitation"
+    ],
+    "aligns_with": [
+      "@precautionary_default",
+      "@protection_asymmetry",
+      "@individual_consideration"
+    ],
+    "rationale": "Delayed compensation constitutes value extraction per @exploitation indicators. Tiered timelines balance verification complexity with worker protection."
   }
 }
