@@ -162,5 +162,27 @@
       "compensation_protection": "Evidence requirements shall not be used to delay, deny, or reduce compensation to which contributors are entitled under @fair_compensation",
       "default_on_delay": "If evidence review exceeds 48 hours, provisional payment at the claimed amount is required pending resolution"
     }
+  },
+  "@worker_payment_guarantee": {
+    "version": "1.0.0",
+    "statement": "Verified worker compensation takes absolute priority over all other treasury obligations. Once work is verified per @evidence standards, payment cannot be delayed, diluted, or deprioritized.",
+    "locked": true,
+    "lock_reason": "Worker compensation is the foundation of sustainable contribution. Allowing exceptions creates pathways for exploitation.",
+    "aligns_with": [
+      "@protection_ratchet",
+      "@fair_compensation",
+      "@contribution_axiom"
+    ],
+    "verification_requirements": {
+      "minimum_evidence_tier": "C",
+      "verification_timeline": "48 hours from claim submission",
+      "default_on_timeout": "If platform fails to contest within timeline, claim is auto-verified"
+    },
+    "implications": [
+      "Treasury reserves cannot be cited to delay verified compensation",
+      "Payment processing is publicly auditable per @transparency",
+      "Disputes after verification require platform to provide counter-evidence",
+      "Compensation once verified is protected by @protection_ratchet"
+    ]
   }
 }
