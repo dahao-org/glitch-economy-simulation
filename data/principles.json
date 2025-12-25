@@ -180,7 +180,7 @@
     },
     "implications": [
       "Treasury reserves cannot be cited to delay verified compensation",
-      "Payment processing is publicly auditable per @transparency",
+      "Payment processing is publicly auditable",
       "Disputes after verification require platform to provide counter-evidence",
       "Compensation once verified is protected by @protection_ratchet"
     ]
