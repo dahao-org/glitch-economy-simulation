@@ -271,7 +271,9 @@
       "@evidence"
     ],
     "criteria": [
-      "Supported by @evidence of quality tier C or higher"
+      "Supported by @evidence of quality tier C or higher",
+      "Mechanisms for independent review and validation must exist",
+      "Claim details must be publicly accessible to ensure auditability"
     ]
   }
 }
