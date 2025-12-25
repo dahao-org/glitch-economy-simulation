@@ -302,5 +302,40 @@
       "@individual_consideration"
     ],
     "rationale": "Delayed compensation constitutes value extraction per @exploitation indicators. Tiered timelines balance verification complexity with worker protection."
+  },
+  "@dispute_resolution": {
+    "version": "1.0.0",
+    "definition": "A structured process for resolving conflicts through evidence-based mediation before escalation, incorporating asymmetric protections for vulnerable parties.",
+    "phases": {
+      "immediate": {
+        "description": "Upon dispute filing, interim protections activated for potentially harmed party",
+        "timeline": "Within 24 hours of filing"
+      },
+      "mediation": {
+        "description": "Both parties present evidence to neutral mediator(s); good faith participation required",
+        "timeline": "Maximum 14 days",
+        "requirements": [
+          "Evidence submission",
+          "Response opportunity",
+          "Mediator recommendation"
+        ]
+      },
+      "escalation": {
+        "description": "Unresolved disputes proceed to community governance vote",
+        "trigger": "Mediation failure OR ongoing harm OR party request with cause"
+      }
+    },
+    "principles": {
+      "procedural_fairness": "All parties may present evidence and respond",
+      "substantive_protection": "Uncertainty resolved per @precautionary_default favoring potentially harmed party",
+      "no_retaliation": "Filing disputes cannot trigger adverse action"
+    },
+    "aligns_with": [
+      "@protection",
+      "@protection_asymmetry",
+      "@precautionary_default",
+      "@good_faith",
+      "@dialectic"
+    ]
   }
 }
