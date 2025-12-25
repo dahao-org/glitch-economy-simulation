@@ -331,5 +331,53 @@
       "@evidence"
     ],
     "rationale": "Payment delays cause real economic harm to contributors. Bounded timelines with enforcement mechanisms prevent exploitation while allowing reasonable processing time."
+  },
+  "@gig_worker": {
+    "type": "stakeholder_profile",
+    "version": "1.0.0",
+    "stakeholder_type": "gig_worker",
+    "definition": "A contributor who provides labor through platform-mediated, task-based work arrangements without traditional employment protections.",
+    "contribution_evidence": {
+      "primary_metrics": [
+        "Tasks completed (verified via platform logs)",
+        "Hours worked (time-tracked or platform-recorded)",
+        "Compute cycles contributed (for digital labor)",
+        "Client ratings and completion rates"
+      ],
+      "verification_method": "Platform API data OR worker-submitted evidence at @evidence tier C or higher",
+      "verification_timeline": "48 hours per @worker_payment_guarantee",
+      "default_on_timeout": "Auto-verified if platform fails to contest within timeline"
+    },
+    "contribution_capacity_confidence": "MEDIUM to HIGH based on platform data availability",
+    "compensation_requirements": {
+      "minimum_threshold": "Living wage for jurisdiction, adjusted for task complexity",
+      "payment_timeline": "Per @timely_compensation: 48 hours from verification",
+      "dispute_resolution": "Exploitation presumed per @precautionary_default; platform bears burden of disproof"
+    },
+    "typical_contribution_patterns": [
+      "Variable hours, multiple concurrent platforms",
+      "Task-based rather than time-based work",
+      "Own-equipment provision (vehicles, devices, tools)",
+      "Geographic mobility or remote digital work"
+    ],
+    "known_exploitation_vectors": [
+      "Algorithmic wage suppression and opacity",
+      "Misclassification as independent contractor",
+      "Unilateral deactivation without recourse",
+      "Unpaid wait time and platform-mandated availability",
+      "Expense shifting (fuel, maintenance, equipment)",
+      "Rating manipulation affecting work access"
+    ],
+    "protection_mechanisms": [
+      "@worker_payment_guarantee applies in full",
+      "@timely_compensation enforced with late payment penalties",
+      "@evidence_based_decision_making with platform burden of disproof",
+      "@protection_ratchet prevents rollback of protections"
+    ],
+    "aligns_with": [
+      "@labor_primacy",
+      "@fair_compensation",
+      "@contribution_axiom"
+    ]
   }
 }
