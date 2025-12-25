@@ -331,6 +331,7 @@
       "no_retaliation": "Filing disputes cannot trigger adverse action"
     },
     "aligns_with": [
+      "@protection",
       "@protection_asymmetry",
       "@precautionary_default",
       "@good_faith",
