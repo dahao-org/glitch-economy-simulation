@@ -264,5 +264,16 @@
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  },
+  "@verifiable_claim": {
+    "definition": "A claim that can be objectively proven or disproven through the examination of evidence.",
+    "aligns_with": [
+      "@evidence"
+    ],
+    "criteria": [
+      "Supported by @evidence of quality tier C or higher",
+      "Mechanisms for independent review and validation must exist",
+      "Claim details must be publicly accessible to ensure auditability"
+    ]
   }
 }
