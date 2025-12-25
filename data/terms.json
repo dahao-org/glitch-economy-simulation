@@ -341,7 +341,7 @@
     "definition": "In disputes concerning compensation, labor rights, or exploitation claims, the party with greater institutional power and access to records bears the primary burden of demonstrating compliance with established standards. This creates a rebuttable presumption favoring the potentially harmed party when evidence is ambiguous or inaccessible.",
     "mechanism": {
       "initial_burden": "Claimant must present prima facie evidence of harm or violation",
-      "burden_shift": "Upon prima facie showing, institutional party must demonstrate compliance with relevant standards (@exploitation indicators, etc.)",
+      "burden_shift": "Upon prima facie showing, institutional party must demonstrate compliance with relevant standards (@timely_compensation, @exploitation indicators, etc.)",
       "rebuttal": "Presumption may be rebutted through verified evidence per @proof_of_useful_work tiers",
       "ambiguity_resolution": "Unresolved ambiguity favors the party with less institutional power, per @precautionary_default"
     },
