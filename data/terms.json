@@ -307,5 +307,29 @@
       "compensation_protection": "Evidence requirements shall not be used to delay, deny, or reduce compensation to which contributors are entitled under @fair_compensation",
       "default_on_delay": "If evidence review exceeds 48 hours, provisional payment at the claimed amount is required pending resolution"
     }
+  },
+  "@timely_compensation": {
+    "version": "1.0.0",
+    "definition": "The requirement that contributor compensation be processed and delivered within a bounded, predictable timeframe following verified work completion.",
+    "standard_timeline": "48 hours from verification completion",
+    "extended_timeline": {
+      "maximum": "72 hours",
+      "conditions": [
+        "Complex multi-party verification required",
+        "Cross-border payment processing",
+        "Dispute resolution in progress with documented timeline"
+      ]
+    },
+    "enforcement": {
+      "late_payment_penalty": "1% per 24-hour period past deadline, paid to affected contributor",
+      "escalation_trigger": "Automatic escalation to governance review at 96 hours",
+      "transparency_requirement": "All delays must be publicly documented with justification per @transparency"
+    },
+    "aligns_with": [
+      "@fair_compensation",
+      "@protection_ratchet",
+      "@evidence"
+    ],
+    "rationale": "Payment delays cause real economic harm to contributors. Bounded timelines with enforcement mechanisms prevent exploitation while allowing reasonable processing time."
   }
 }
