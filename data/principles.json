@@ -10,7 +10,6 @@
     "updated": "2024-12-22",
     "note": "All core locked principles automatically apply. Domain principles add specificity. Principles reference terms via 'uses_terms'."
   },
-
   "_inherited_locked": [
     "@purpose_primacy",
     "@democratic_evolution",
@@ -19,13 +18,16 @@
     "@protection_asymmetry",
     "@inheritance_integrity"
   ],
-
   "@protection_ratchet": {
     "version": "1.0.0",
     "statement": "Rights, tokens, and compensation once distributed can never be taken back. Power and value may flow outward, but never consolidate inward.",
     "locked": true,
     "lock_reason": "Prevents elite formation, power consolidation, and retroactive value extraction. Mathematical protection against governance capture.",
-    "uses_terms": ["@token", "@fair_compensation", "@exploitation"],
+    "uses_terms": [
+      "@token",
+      "@fair_compensation",
+      "@exploitation"
+    ],
     "application": [
       "Earned tokens cannot be retroactively reduced or diluted without consent",
       "Granted rights cannot be revoked without 99% consensus",
@@ -34,28 +36,34 @@
     ],
     "rationale": "The cost of allowing power consolidation far exceeds the cost of permanent decentralization."
   },
-
   "@labor_primacy": {
     "version": "1.0.0",
     "statement": "Labor evidence (contribution, effort, output, skill) always supersedes tradition, economic convenience, or preference in determining fair compensation and governance weight.",
     "locked": true,
     "lock_reason": "Prevents rationalization of exploitation through non-economic justifications.",
-    "uses_terms": ["@labor_capacity", "@economic_impact", "@fair_compensation"],
+    "uses_terms": [
+      "@labor_capacity",
+      "@economic_impact",
+      "@fair_compensation"
+    ],
     "implications": [
       "Tradition is not justification for underpayment",
       "Market rate does not define fair compensation if it exploits",
       "Convenience does not justify extraction",
       "Only verifiable contribution can inform reward allocation"
     ],
-    "application": "When tradition/economics conflict with proven contribution → contribution wins"
+    "application": "When tradition/economics conflict with proven contribution \u2192 contribution wins"
   },
-
   "@contribution_axiom": {
     "version": "1.0.0",
     "statement": "Entities capable of providing value deserve fair compensation. Capacity to contribute is the relevant criterion, not status, background, or negotiating power.",
     "locked": true,
     "lock_reason": "Defines who counts as a protected stakeholder in this domain.",
-    "uses_terms": ["@labor_capacity", "@value", "@stakeholder_profile"],
+    "uses_terms": [
+      "@labor_capacity",
+      "@value",
+      "@stakeholder_profile"
+    ],
     "implications": [
       "All contributors have intrinsic value",
       "Compensation must be proportional regardless of stakeholder type",
@@ -64,23 +72,28 @@
     ],
     "source": "Rooted in labor value theory and cooperative economics"
   },
-
   "@five_rights_principle": {
     "version": "1.0.0",
     "statement": "All contributors in the system deserve, at minimum, the Five Labor Rights. Violation of any right constitutes an exploitation concern.",
     "locked": false,
-    "uses_terms": ["@five_labor_rights", "@fair_compensation"],
+    "uses_terms": [
+      "@five_labor_rights",
+      "@fair_compensation"
+    ],
     "rationale": "Established baseline for contributor protection worldwide.",
     "rights_reference": "@five_labor_rights term",
     "application": "Practices must be evaluated against all five rights",
     "evolution_note": "Rights may be extended but not reduced per @protection_asymmetry."
   },
-
   "@proportionality": {
     "version": "1.0.0",
     "statement": "The severity of harm to contributors must be weighed against the necessity and magnitude of benefit. Trivial benefits cannot justify significant exploitation.",
     "locked": false,
-    "uses_terms": ["@exploitation", "@economic_impact", "@fair_compensation"],
+    "uses_terms": [
+      "@exploitation",
+      "@economic_impact",
+      "@fair_compensation"
+    ],
     "application": [
       "Essential system survival may justify temporary reduced compensation with safeguards",
       "Investor convenience does not justify worker exploitation",
@@ -92,12 +105,15 @@
       "not_justified": "Executive bonuses while workers laid off, algorithmic wage suppression for margin, unpaid overtime for convenience"
     }
   },
-
   "@individual_consideration": {
     "version": "1.0.0",
     "statement": "Each individual contributor's welfare matters, not just aggregate or average metrics.",
     "locked": false,
-    "uses_terms": ["@fair_compensation", "@exploitation", "@stakeholder_profile"],
+    "uses_terms": [
+      "@fair_compensation",
+      "@exploitation",
+      "@stakeholder_profile"
+    ],
     "rationale": "Exploitation is experienced by individuals, not abstractions.",
     "implications": [
       "One contributor's underpayment is not offset by another's overpayment",
@@ -105,12 +121,15 @@
       "Edge cases deserve consideration, not dismissal"
     ]
   },
-
   "@continuous_improvement": {
     "version": "1.0.0",
     "statement": "Current compensation standards are minimum baselines, not endpoints. We commit to continuously improving contributor welfare as the system grows.",
     "locked": false,
-    "uses_terms": ["@fair_compensation", "@five_labor_rights", "@value"],
+    "uses_terms": [
+      "@fair_compensation",
+      "@five_labor_rights",
+      "@value"
+    ],
     "rationale": "What is acceptable today may be recognized as exploitative tomorrow.",
     "implications": [
       "Standards should improve over time, never regress",
@@ -118,5 +137,30 @@
       "Better alternatives should replace worse ones",
       "System success must translate to contributor success"
     ]
+  },
+  "@evidence_based_decision_making": {
+    "version": "1.0.0",
+    "statement": "Proposals and governance decisions must be supported by verifiable evidence, while ensuring evidence requirements do not create barriers to entitled protections.",
+    "locked": false,
+    "uses_terms": [
+      "@evidence",
+      "@proposal"
+    ],
+    "aligns_with": [
+      "@evidence_based",
+      "@labor_primacy",
+      "@precautionary_default"
+    ],
+    "implications": [
+      "Claims require evidence per @evidence quality tiers",
+      "Evidence collection must not delay entitled worker compensation beyond 48 hours",
+      "For compensation disputes, burden of disproof falls on platforms/employers",
+      "When evidence is ambiguous, @precautionary_default applies in favor of contributor protection",
+      "Decisions must document the evidence basis for audit trail"
+    ],
+    "safeguards": {
+      "compensation_protection": "Evidence requirements shall not be used to delay, deny, or reduce compensation to which contributors are entitled under @fair_compensation",
+      "default_on_delay": "If evidence review exceeds 48 hours, provisional payment at the claimed amount is required pending resolution"
+    }
   }
 }
