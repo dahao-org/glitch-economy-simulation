@@ -293,6 +293,7 @@
     },
     "uses_terms": [
       "@proof_of_useful_work",
+      "@protection",
       "@exploitation"
     ],
     "aligns_with": [
