@@ -264,31 +264,5 @@
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
-  },
-  "@accountability": {
-    "version": "1.0.0",
-    "definition": "The obligation of participants to answer for their actions, decisions, and commitments within governance processes, with consequences proportional to demonstrated departures from stated responsibilities.",
-    "locked": false,
-    "uses_terms": [
-      "@transparency",
-      "@good_faith",
-      "@evidence_based",
-      "@proportionality",
-      "@stakeholder"
-    ],
-    "relationship_to_good_faith": "Accountability operates within the @good_faith framework. Participants are presumed to act in good faith; accountability measures adherence to explicit commitments, not intentions. Demonstrated pattern of commitment breach may rebut good faith presumption through evidence, not assertion.",
-    "mechanism": {
-      "visibility": "All accountability records are public per @transparency",
-      "evidence_requirement": "Claims of non-compliance require documented evidence per @evidence_based",
-      "graduated_response": "Consequences scale proportionally: correction \u2192 formal notice \u2192 restricted privileges \u2192 removal, based on severity, repetition, and stakeholder impact",
-      "appeal_process": "Accused parties may present counter-evidence before consequences are applied"
-    },
-    "implications": [
-      "Creates enforceable connection between principles and practice",
-      "Prevents diffusion of responsibility in collective decisions",
-      "Preserves trust through verification rather than surveillance",
-      "Domain-specific implementations define particular thresholds and timelines"
-    ],
-    "note": "Unlocked because domains may adjust accountability thresholds to their specific contexts while maintaining core graduated-response structure."
   }
 }
