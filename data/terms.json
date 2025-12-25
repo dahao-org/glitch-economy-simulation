@@ -272,8 +272,8 @@
     ],
     "criteria": [
       "Supported by @evidence of quality tier C or higher",
-      "Mechanisms for independent review and validation must exist, consistent with principles",
-      "Claim details must be publicly accessible to ensure auditability as per"
+      "Mechanisms for independent review and validation must exist, consistent with @transparency principles",
+      "Claim details must be publicly accessible to ensure auditability as per @transparency"
     ]
   }
 }
