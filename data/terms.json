@@ -282,5 +282,30 @@
       "@economic_impact",
       "@fair_compensation"
     ]
+  },
+  "@evidence_based_decision_making": {
+    "version": "1.0.0",
+    "statement": "Proposals and governance decisions must be supported by verifiable evidence, while ensuring evidence requirements do not create barriers to entitled protections.",
+    "locked": false,
+    "uses_terms": [
+      "@evidence",
+      "@proposal"
+    ],
+    "aligns_with": [
+      "@evidence_based",
+      "@labor_primacy",
+      "@precautionary_default"
+    ],
+    "implications": [
+      "Claims require evidence per @evidence quality tiers",
+      "Evidence collection must not delay entitled worker compensation beyond 48 hours",
+      "For compensation disputes, burden of disproof falls on platforms/employers",
+      "When evidence is ambiguous, @precautionary_default applies in favor of contributor protection",
+      "Decisions must document the evidence basis for audit trail"
+    ],
+    "safeguards": {
+      "compensation_protection": "Evidence requirements shall not be used to delay, deny, or reduce compensation to which contributors are entitled under @fair_compensation",
+      "default_on_delay": "If evidence review exceeds 48 hours, provisional payment at the claimed amount is required pending resolution"
+    }
   }
 }
