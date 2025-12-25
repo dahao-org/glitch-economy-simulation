@@ -351,7 +351,7 @@
       "record_keeping": "Parties are expected to maintain records proportional to their institutional capacity"
     },
     "uses_terms": [
-      "@protection",
+      "@protection_asymmetry",
       "@exploitation",
       "@precautionary_default",
       "@proof_of_useful_work",
