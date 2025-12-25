@@ -275,5 +275,12 @@
       "Mechanisms for independent review and validation must exist, consistent with principles",
       "Claim details must be publicly accessible to ensure auditability as per principles"
     ]
+  },
+  "@reserve_buffer": {
+    "definition": "A practice requiring DAHAO-managed treasuries to maintain a minimum reserve of liquid assets, ensuring long-term financial stability and the ability to sustain critical payouts during economic shocks. The management and utilization of these reserves must be fully transparent, subject to regular public audit, and designed not to impede immediate, verified compensation as per @fair_compensation.",
+    "aligns_with": [
+      "@economic_impact",
+      "@fair_compensation"
+    ]
   }
 }
