@@ -333,7 +333,8 @@
     "aligns_with": [
       "@protection_asymmetry",
       "@precautionary_default",
-      "@good_faith"
+      "@good_faith",
+      "@dialectic"
     ]
   },
   "@burden_of_proof_in_disputes": {
