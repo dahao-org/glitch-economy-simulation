@@ -399,7 +399,7 @@
   },
   "@accessible_claims_process": {
     "version": "1.0.0",
-    "definition": "The compensation claims process must be navigable by all contributors regardless of technical sophistication, while maintaining verification integrity through existing @proof_of_useful_work tiers.",
+    "definition": "The compensation claims process must be navigable by all contributors regardless of technical sophistication, while maintaining verification integrity through existing verification tiers.",
     "accessibility_requirements": {
       "time_to_initiate": "Claim initiation must be achievable within 10 minutes for any contributor",
       "literacy_level": "Required reading level must not exceed platform terms of service complexity",
@@ -414,7 +414,7 @@
       },
       "template_library": {
         "description": "Pre-approved claim templates for common scenarios",
-        "verification": "Templates designed to satisfy Tier C requirements of @proof_of_useful_work"
+        "verification": "Templates designed to satisfy verification requirements"
       }
     },
     "integrity_safeguards": {
@@ -427,7 +427,6 @@
       "capacity_triggers": "Clear metrics for scaling assistance capacity based on demand and resources"
     },
     "uses_terms": [
-      "@proof_of_useful_work",
       "@fair_compensation",
       "@good_faith"
     ],
