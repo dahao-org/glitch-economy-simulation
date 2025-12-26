@@ -295,36 +295,26 @@
   },
   "@dispute_resolution": {
     "version": "1.0.0",
-    "definition": "A structured pre-proposal mediation process for resolving interpersonal or operational conflicts between stakeholders before formal governance escalation.",
-    "scope": {
-      "includes": [
-        "compensation disputes",
-        "contribution credit conflicts",
-        "collaboration disagreements",
-        "resource allocation conflicts"
-      ],
-      "excludes": [
-        "value/principle debates",
-        "constitutional changes",
-        "technical architecture decisions"
-      ]
-    },
+    "definition": "A structured pre-proposal process for resolving stakeholder conflicts through mediation before escalation to formal governance.",
+    "scope": "Applies to stakeholder-to-stakeholder disputes (compensation, contribution attribution, resource allocation) that do not yet require formal governance proposals.",
     "process": {
-      "initiation": "Either party may request mediation by notifying the other and proposing a mediator",
-      "mediator_selection": "Jointly agreed upon or selected from trained community pool",
-      "timeline": "Maximum 14 days from initiation to resolution or escalation",
-      "outcome": "Mutual agreement (non-binding recommendation) or documented escalation to formal governance"
+      "initiation": "Any affected stakeholder may request mediation",
+      "documentation": "Both parties must present evidence per @evidence_based",
+      "mediation": "Neutral party facilitates structured dialogue",
+      "outcome": "Non-binding recommendation; parties may accept or escalate to formal governance"
     },
-    "principles": {
-      "voluntary": "Participation is encouraged but not mandatory",
-      "confidential": "Proceedings remain private unless both parties consent to disclosure",
-      "evidence_based": "Parties present evidence per @evidence_based standards",
-      "good_faith": "Both parties commit to genuine resolution attempts"
-    },
-    "escalation": "Unresolved disputes may proceed to formal proposal under @democratic_evolution with mediation summary attached",
+    "power_balance_provisions": [
+      "Mediators must consider information asymmetry between parties",
+      "Parties with greater resources must provide relevant documentation upon request",
+      "No barriers to participation for any stakeholder type"
+    ],
+    "relationship_to_governance": "Complements @democratic_evolution; does not replace formal proposals or votes. Mediation outcomes inform but do not bind governance decisions.",
     "aligns_with": [
       "@democratic_evolution",
-      "@evidence_based"
-    ]
+      "@evidence_based",
+      "@individual_consideration",
+      "@fair_compensation"
+    ],
+    "locked": false
   }
 }
