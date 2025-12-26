@@ -426,12 +426,14 @@
       "capacity_triggers": "Clear metrics for scaling assistance capacity based on demand and resources"
     },
     "uses_terms": [
+      "@proof_of_useful_work",
       "@fair_compensation",
       "@good_faith"
     ],
     "aligns_with": [
       "@individual_consideration",
       "@protection_asymmetry",
+      "@economic_stability",
       "@continuous_improvement"
     ],
     "rationale": "Technical barriers to claims processes can function as de facto denial of compensation rights. This term operationalizes @individual_consideration by ensuring each contributor can access the system, while maintaining verification integrity and economic sustainability."
