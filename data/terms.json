@@ -56,7 +56,7 @@
     "note": "Operational thresholds vary by context; uncertainty triggers @protection_ratchet"
   },
   "@fair_compensation": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "definition": "The economic state where a contributor receives value proportional to their contribution, enabling sustainable participation.",
     "components": [
       "Token compensation (GLITCH tokens via streaming payments or block rewards)",
@@ -70,7 +70,25 @@
       "Milestone payments (proposal-approved lump sums)",
       "Validator commissions (for compute providers)"
     ],
-    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
+    "timing_requirements": {
+      "standard_payment_window": "48 hours from verified work completion",
+      "verification_reference": "Clock starts when @proof_of_useful_work verification completes",
+      "graduated_response": [
+        "24-48 hours overdue: automated warning to responsible party",
+        "48-72 hours overdue: public flagging in governance dashboard",
+        "72+ hours overdue: 1% daily penalty interest accrues to contributor"
+      ],
+      "exceptions": [
+        "Force majeure (network outage, chain halt) with documented evidence",
+        "Disputed contribution under active @dispute_resolution process"
+      ]
+    },
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, contribution metrics, and timing compliance.",
+    "aligns_with": [
+      "@protection_ratchet",
+      "@labor_primacy",
+      "@proportionality"
+    ]
   },
   "@value": {
     "version": "1.0.0",
