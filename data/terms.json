@@ -438,5 +438,45 @@
       "@continuous_improvement"
     ],
     "rationale": "Technical barriers to claims processes can function as de facto denial of compensation rights. This term operationalizes @individual_consideration by ensuring each contributor can access the system, while maintaining verification integrity and economic sustainability."
+  },
+  "@gradual_transition": {
+    "version": "1.0.0",
+    "definition": "Structural policy changes affecting compensation mechanisms, governance procedures, or system economics should be phased over appropriate periods with clear milestones, preventing systemic shocks while maintaining the absolute primacy of worker protections.",
+    "scope": {
+      "applies_to": [
+        "Changes to compensation calculation methods",
+        "Modifications to governance voting thresholds",
+        "Restructuring of token economics",
+        "Platform fee adjustments"
+      ],
+      "explicitly_exempt": [
+        "Adding new protections per @protection_asymmetry",
+        "Remediation of documented ongoing harm",
+        "Emergency responses to active exploitation",
+        "Enhancements to @accessible_claims_process"
+      ]
+    },
+    "implementation_requirements": {
+      "minimum_notice": "30 days advance notice for significant changes",
+      "milestone_documentation": "Clear, publicly visible milestones",
+      "impact_assessment": "Changes must include analysis of effects on all stakeholder groups",
+      "contributor_voice": "Affected contributors must have input opportunity per @democratic_evolution"
+    },
+    "safeguards": {
+      "no_protection_delays": "This term cannot be invoked to delay protections or remediation of active harm",
+      "emergency_override": "Documented ongoing harm triggers immediate response regardless of transition schedules",
+      "precautionary_alignment": "When transition timing is uncertain, favor faster implementation of protections per @precautionary_default"
+    },
+    "uses_terms": [
+      "@economic_stability",
+      "@fair_compensation"
+    ],
+    "aligns_with": [
+      "@economic_stability",
+      "@protection_asymmetry",
+      "@democratic_evolution",
+      "@precautionary_default"
+    ],
+    "rationale": "Abrupt structural changes can destabilize systems and harm all stakeholders through unintended consequences. Phased transitions allow for course correction and stakeholder adaptation. However, this principle exists to serve stability, not to obstruct justice - hence the explicit exemption for protective measures."
   }
 }
