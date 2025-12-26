@@ -368,14 +368,14 @@
     "components": {
       "reserve_requirement": {
         "description": "Systems must maintain reserves sufficient to honor all pending compensation obligations",
-        "purpose": "Ensures compensation obligations can always be fulfilled"
+        "purpose": "Ensures @timely_compensation can always be fulfilled"
       },
       "gradual_implementation": {
         "description": "Structural economic changes should be phased with clear milestones",
         "exception": "Does not apply to adding protections per @protection_asymmetry"
       },
       "transparency": {
-        "description": "Reserve levels and transition timelines must be publicly visible"
+        "description": "Reserve levels and transition timelines must be publicly visible per @transparency"
       }
     },
     "safeguards": {
@@ -384,8 +384,8 @@
       "protection_priority": "Worker protections take precedence over stability concerns per @precautionary_default"
     },
     "uses_terms": [
-      "@fair_compensation",
-      "@exploitation"
+      "@exploitation",
+      "@fair_compensation"
     ],
     "aligns_with": [
       "@precautionary_default",
