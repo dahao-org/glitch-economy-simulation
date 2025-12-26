@@ -370,14 +370,14 @@
     "components": {
       "reserve_requirement": {
         "description": "Systems must maintain reserves sufficient to honor all pending compensation obligations",
-        "purpose": "Ensures @timely_compensation can always be fulfilled"
+        "purpose": "Ensures compensation commitments can always be fulfilled"
       },
       "gradual_implementation": {
         "description": "Structural economic changes should be phased with clear milestones",
         "exception": "Does not apply to adding protections per @protection_asymmetry"
       },
       "transparency": {
-        "description": "Reserve levels and transition timelines must be publicly visible per @transparency"
+        "description": "Reserve levels and transition timelines must be publicly visible"
       }
     },
     "safeguards": {
