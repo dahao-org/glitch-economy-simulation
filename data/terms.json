@@ -291,6 +291,9 @@
       "grace_period": "24-hour grace period after maximum with documented reason required",
       "escalation": "After grace period, triggers @protection mechanisms and dispute flag"
     },
+    "uses_terms": [
+      "@exploitation"
+    ],
     "aligns_with": [
       "@precautionary_default",
       "@protection_asymmetry",
