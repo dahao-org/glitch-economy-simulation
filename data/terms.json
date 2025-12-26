@@ -329,11 +329,9 @@
       "no_retaliation": "Filing disputes cannot trigger adverse action"
     },
     "aligns_with": [
-      "@protection",
       "@protection_asymmetry",
       "@precautionary_default",
-      "@good_faith",
-      "@dialectic"
+      "@good_faith"
     ]
   },
   "@burden_of_proof_in_disputes": {
