@@ -292,7 +292,6 @@
       "escalation": "After grace period, triggers @protection mechanisms and dispute flag"
     },
     "uses_terms": [
-      "@proof_of_useful_work",
       "@exploitation"
     ],
     "aligns_with": [
