@@ -286,6 +286,7 @@
       "Uncertainty in assessment triggers @precautionary_default favoring contributor"
     ],
     "aligns_with": [
+      "@transparency",
       "@evidence_based",
       "@fair_compensation",
       "@individual_consideration",
