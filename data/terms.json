@@ -426,7 +426,6 @@
       "capacity_triggers": "Clear metrics for scaling assistance capacity based on demand and resources"
     },
     "uses_terms": [
-      "@proof_of_useful_work",
       "@fair_compensation",
       "@good_faith"
     ],
