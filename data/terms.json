@@ -364,5 +364,38 @@
       "@proportionality"
     ],
     "rationale": "Institutional parties typically control documentation, systems, and records. Requiring vulnerable parties to prove negatives creates barriers to justice. This term operationalizes @precautionary_default in dispute contexts while maintaining fairness through rebuttal mechanisms."
+  },
+  "@economic_stability": {
+    "version": "1.0.0",
+    "definition": "The system must maintain operational reserves and implement structural changes gradually to ensure sustainable contributor compensation and prevent systemic shocks that would harm all stakeholders.",
+    "components": {
+      "reserve_requirement": {
+        "description": "Systems must maintain reserves sufficient to honor all pending compensation obligations",
+        "purpose": "Ensures compensation obligations can always be fulfilled"
+      },
+      "gradual_implementation": {
+        "description": "Structural economic changes should be phased with clear milestones",
+        "exception": "Does not apply to adding protections per @protection_asymmetry"
+      },
+      "transparency": {
+        "description": "Reserve levels and transition timelines must be publicly visible"
+      }
+    },
+    "safeguards": {
+      "no_payment_delays": "Reserve requirements cannot be used to justify delayed compensation",
+      "worker_voice": "Stability measures affecting compensation require contributor input per @democratic_evolution",
+      "protection_priority": "Worker protections take precedence over stability concerns per @precautionary_default"
+    },
+    "uses_terms": [
+      "@fair_compensation",
+      "@exploitation"
+    ],
+    "aligns_with": [
+      "@precautionary_default",
+      "@protection_asymmetry",
+      "@democratic_evolution",
+      "@continuous_improvement"
+    ],
+    "rationale": "Economic instability harms all stakeholders. Reserves ensure payment capacity. Gradual transitions prevent chaos. These mechanisms support rather than undermine worker protection."
   }
 }
