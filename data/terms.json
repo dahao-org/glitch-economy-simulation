@@ -457,7 +457,7 @@
     },
     "implementation_requirements": {
       "minimum_notice": "30 days advance notice for significant changes",
-      "milestone_documentation": "Clear, publicly visible milestones",
+      "milestone_documentation": "Clear, publicly visible milestones per @transparency",
       "impact_assessment": "Changes must include analysis of effects on all stakeholder groups",
       "contributor_voice": "Affected contributors must have input opportunity per @democratic_evolution"
     },
