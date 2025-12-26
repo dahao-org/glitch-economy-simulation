@@ -431,7 +431,6 @@
     "aligns_with": [
       "@individual_consideration",
       "@protection_asymmetry",
-      "@economic_stability",
       "@continuous_improvement"
     ],
     "rationale": "Technical barriers to claims processes can function as de facto denial of compensation rights. This term operationalizes @individual_consideration by ensuring each contributor can access the system, while maintaining verification integrity and economic sustainability."
