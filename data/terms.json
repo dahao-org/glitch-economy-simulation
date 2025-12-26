@@ -264,5 +264,32 @@
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  },
+  "@contribution_assessment": {
+    "version": "1.0.0",
+    "definition": "A transparent, evidence-based process for evaluating stakeholder contributions to determine fair compensation, bridging proof of work verification with reward allocation.",
+    "components": [
+      "Criteria transparency: Assessment standards must be published before application",
+      "Evidence responsibility: Systems/platforms maintain assessment records, not individual contributors",
+      "Proportional evaluation: Assessment rigor scales with contribution magnitude",
+      "Stakeholder input: Criteria development includes affected stakeholder representation",
+      "Appeal pathway: Contributors may challenge assessments through governance mechanisms"
+    ],
+    "relationship_to_existing_terms": {
+      "input": "@proof_of_useful_work (verified contribution evidence)",
+      "output": "@fair_compensation (proportional reward determination)",
+      "governed_by": "@democratic_evolution (criteria changes require consensus)"
+    },
+    "safeguards": [
+      "Information asymmetries shall not disadvantage contributors",
+      "Each contributor's assessment matters individually per @individual_consideration",
+      "Uncertainty in assessment triggers @precautionary_default favoring contributor"
+    ],
+    "aligns_with": [
+      "@evidence_based",
+      "@fair_compensation",
+      "@individual_consideration",
+      "@proportionality"
+    ]
   }
 }
