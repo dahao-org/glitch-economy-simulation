@@ -289,7 +289,7 @@
     "graduated_response": {
       "notification": "At 50% of maximum time, automatic notification to payer",
       "grace_period": "24-hour grace period after maximum with documented reason required",
-      "escalation": "After grace period, triggers @protection mechanisms and dispute flag"
+      "escalation": "After grace period, triggers @protection_asymmetry mechanisms and dispute flag"
     },
     "uses_terms": [
       "@exploitation"
