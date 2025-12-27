@@ -334,5 +334,39 @@
       "@fair_compensation"
     ],
     "locked": false
+  },
+  "@evidence_accessibility": {
+    "version": "1.0.0",
+    "definition": "The principle that evidence requirements must account for parties' differential access to documentation, ensuring fair dispute resolution when information asymmetry exists.",
+    "asymmetry_indicators": [
+      "One party controls record-keeping systems",
+      "Documentation requires credentials only one party possesses",
+      "Work records stored in proprietary systems",
+      "Historical data purged or inaccessible to contributor"
+    ],
+    "remedies": {
+      "documentation_escrow": "Platforms must maintain accessible copies of contributor work records",
+      "burden_shift": "Burden shifts to party controlling evidence when asymmetry is demonstrated",
+      "adverse_inference": "Failure to produce requested documentation may be interpreted against withholding party"
+    },
+    "tiered_response": {
+      "minor_asymmetry": "Extended deadlines for contributor evidence gathering",
+      "moderate_asymmetry": "Platform required to produce relevant records within 48 hours",
+      "severe_asymmetry": "Rebuttable presumption favoring contributor claim"
+    },
+    "safeguards": [
+      "Bad faith claims penalized per @proportionality",
+      "Asymmetry must be demonstrated, not assumed",
+      "Both parties retain right to present counter-evidence"
+    ],
+    "relationship_to_existing_terms": {
+      "evidence_tiers": "@proof_of_useful_work",
+      "process": "@dispute_resolution"
+    },
+    "aligns_with": [
+      "@evidence_based",
+      "@labor_primacy",
+      "@individual_consideration"
+    ]
   }
 }
