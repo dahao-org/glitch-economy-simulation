@@ -368,5 +368,38 @@
       "@labor_primacy",
       "@individual_consideration"
     ]
+  },
+  "@economic_stability": {
+    "version": "1.0.0",
+    "definition": "The principle that the economic system must maintain sufficient reserves and stability mechanisms to sustainably honor all contributor protections and compensation obligations.",
+    "components": {
+      "reserve_requirement": {
+        "minimum": "15% of circulating token supply held in treasury reserve",
+        "purpose": "Absorb economic shocks without compromising contributor payments",
+        "priority_during_shortfall": "Contributor compensation takes precedence over discretionary spending"
+      },
+      "stability_indicators": [
+        "Treasury reserve ratio vs. outstanding obligations",
+        "Payment timing compliance rate",
+        "Dispute resolution fund adequacy"
+      ],
+      "graduated_response": {
+        "warning_threshold": "Reserve falls below 20%",
+        "restriction_threshold": "Reserve falls below 15%",
+        "emergency_threshold": "Reserve falls below 10%"
+      }
+    },
+    "constraints": [
+      "Stability measures cannot reduce existing contributor protections per @protection_ratchet",
+      "Reserve requirements cannot delay verified contributor payments per @fair_compensation",
+      "Implementation changes follow @democratic_evolution consensus requirements"
+    ],
+    "rationale": "Sustainable systems require economic foundations. Contributor protections depend on system solvency. Per @proportionality, stability measures must balance system health against contributor welfare, with contributor welfare taking priority in direct conflicts.",
+    "aligns_with": [
+      "@protection_ratchet",
+      "@fair_compensation",
+      "@proportionality",
+      "@labor_primacy"
+    ]
   }
 }
