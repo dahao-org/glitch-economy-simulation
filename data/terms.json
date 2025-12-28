@@ -401,5 +401,29 @@
       "@proportionality",
       "@labor_primacy"
     ]
+  },
+  "@payment_verification": {
+    "version": "1.0.0",
+    "definition": "The principle that contributors must have independent means to verify their compensation is accurate, complete, and timely through accessible records.",
+    "components": {
+      "record_accessibility": "Contributors can access payment history via chain queries or dashboard",
+      "calculation_transparency": "Formulas determining compensation are published and auditable",
+      "discrepancy_reporting": "Clear pathway to flag and resolve payment discrepancies"
+    },
+    "verification_methods": {
+      "on_chain": "Query glitch1... address transaction history via block explorer",
+      "dashboard": "Platform-provided interface showing contribution-payment mapping",
+      "export": "Contributor can export payment history for independent audit"
+    },
+    "relationship_to_existing_terms": {
+      "validates": "@fair_compensation timing and amount requirements",
+      "triggers": "@dispute_resolution when discrepancies identified",
+      "protected_by": "@evidence_accessibility if records withheld"
+    },
+    "aligns_with": [
+      "@evidence_based",
+      "@fair_compensation",
+      "@individual_consideration"
+    ]
   }
 }
