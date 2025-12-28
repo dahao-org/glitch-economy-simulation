@@ -503,5 +503,33 @@
       "@contribution_axiom",
       "@labor_primacy"
     ]
+  },
+  "@repeat_violation_presumption": {
+    "version": "1.0.0",
+    "definition": "Entities with documented patterns of exploitation violations face proportionally heightened scrutiny in future disputes, with clear thresholds and redemption pathways.",
+    "threshold": {
+      "trigger": "3 or more verified violations within 12 months",
+      "verification": "Each violation must be confirmed through @dispute_resolution process"
+    },
+    "effects": [
+      "Burden shifts to violator to demonstrate compliance in related disputes",
+      "Enhanced documentation requirements for 12 months",
+      "Quarterly compliance reporting"
+    ],
+    "redemption": {
+      "clean_period": "12 months without verified violations",
+      "effect": "Status reverts to standard; history not used in future disputes"
+    },
+    "safeguards": [
+      "Due process required before designation",
+      "Appeal pathway through @dispute_resolution",
+      "Grandfathering: applies only to violations after enactment",
+      "Does not override clear exculpatory evidence per @evidence_based"
+    ],
+    "aligns_with": [
+      "@evidence_accessibility",
+      "@proportionality",
+      "@individual_consideration"
+    ]
   }
 }
