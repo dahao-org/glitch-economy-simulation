@@ -217,5 +217,31 @@
       "@economic_stability",
       "@proportionality"
     ]
+  },
+  "@balanced_stakeholders": {
+    "version": "1.0.0",
+    "statement": "All contributor types (workers, validators, platforms, token holders) deserve proportional voice in governance decisions, with explicit floors protecting historically disadvantaged groups.",
+    "locked": false,
+    "uses_terms": [
+      "@stakeholder_profile",
+      "@contribution_indicators",
+      "@fair_compensation"
+    ],
+    "implements": [
+      "@democratic_evolution",
+      "@protection_asymmetry"
+    ],
+    "safeguards": [
+      "Worker category maintains minimum 25% governance weight",
+      "Reducing any category below floor requires 99% consensus",
+      "Representation calculated from verified @contribution_indicators",
+      "Does not override @worker_protection_presumption in disputes"
+    ],
+    "rationale": "Sustainable governance requires broad stakeholder buy-in. Proportional representation with floors prevents both elite capture and single-group dominance.",
+    "aligns_with": [
+      "@protection_ratchet",
+      "@individual_consideration",
+      "@continuous_improvement"
+    ]
   }
 }
