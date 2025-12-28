@@ -425,5 +425,32 @@
       "@fair_compensation",
       "@individual_consideration"
     ]
+  },
+  "@worker_advocacy": {
+    "version": "1.0.0",
+    "definition": "When evidence is genuinely ambiguous in compensation disputes after exhausting @evidence_accessibility remedies, interpretations should favor the contributor who provided labor.",
+    "scope": {
+      "applies_to": "Compensation disputes where evidence remains ambiguous after @evidence_accessibility processes complete",
+      "does_not_apply": "Disputes with clear evidence, non-compensation matters, bad-faith claims"
+    },
+    "triggers": [
+      "@evidence_accessibility remedies exhausted without resolution",
+      "Genuine ambiguity remains after burden-shifting",
+      "@payment_verification mechanisms unavailable or deliberately obfuscated",
+      "No clear preponderance of evidence for either party"
+    ],
+    "safeguards": [
+      "Only applies after structured @dispute_resolution process attempted",
+      "Pattern of frivolous claims may trigger review per @proportionality",
+      "Does not override clear contrary evidence",
+      "Subject to @democratic_evolution for threshold adjustments"
+    ],
+    "rationale": "Labor creates the value being disputed. When all evidence-gathering mechanisms have been exhausted and ambiguity persists, the party who contributed labor should receive benefit of doubt. This complements @labor_primacy by providing a tiebreaker that honors contribution.",
+    "aligns_with": [
+      "@labor_primacy",
+      "@evidence_accessibility",
+      "@payment_verification",
+      "@individual_consideration"
+    ]
   }
 }
