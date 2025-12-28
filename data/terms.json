@@ -531,5 +531,39 @@
       "@proportionality",
       "@individual_consideration"
     ]
+  },
+  "@initial_dispute_framing": {
+    "version": "1.0.0",
+    "definition": "A structured early-stage protocol establishing how compensation disputes are initiated and documented before burden-shifting mechanisms apply.",
+    "purpose": "Bridge the gap between dispute initiation and @worker_protection_presumption activation",
+    "process": {
+      "initiation": "Any stakeholder may file dispute with preliminary evidence of claim",
+      "preliminary_evidence_standard": "Good faith assertion with at least one supporting indicator (screenshot, transaction record, communication log, or attestation)",
+      "initial_documentation_request": "Respondent has 72 hours to provide relevant records or assert unavailability with explanation",
+      "asymmetry_determination": "If documentation unavailable or significantly delayed, @evidence_accessibility tiered response applies"
+    },
+    "stakeholder_balance": {
+      "worker_initiated": "Standard process above",
+      "platform_initiated": "Standard process above",
+      "validator_initiated": "Standard process above",
+      "cross_category": "Same rights regardless of stakeholder type per @contribution_axiom"
+    },
+    "safeguards": [
+      "Frivolous filing deterrence: Pattern of unfounded claims triggers review per @proportionality",
+      "No barriers to good-faith initiation per @individual_consideration",
+      "Preliminary evidence is low bar - not proof, just good faith basis",
+      "72-hour documentation window balances urgency with reasonable response time"
+    ],
+    "relationship_to_existing_terms": {
+      "precedes": "@worker_protection_presumption (establishes context for burden-shifting)",
+      "triggers": "@evidence_accessibility (when asymmetry identified)",
+      "integrates_with": "@dispute_resolution (formal mediation follows if unresolved)"
+    },
+    "aligns_with": [
+      "@labor_primacy",
+      "@evidence_based",
+      "@individual_consideration",
+      "@contribution_axiom"
+    ]
   }
 }
