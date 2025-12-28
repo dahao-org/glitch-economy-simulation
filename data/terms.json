@@ -452,5 +452,34 @@
       "@payment_verification",
       "@individual_consideration"
     ]
+  },
+  "@expedited_payment_option": {
+    "version": "1.0.0",
+    "definition": "An opt-in mechanism allowing contributors to receive verified compensation within 24 hours, with proportional tradeoffs.",
+    "components": {
+      "eligibility": "Contributors with verified contributions (Tier A or B)",
+      "request_method": "Flag contribution as expedited-eligible at submission",
+      "tradeoffs": [
+        "2% processing fee (funds treasury reserve per @economic_stability)",
+        "Streamlined verification (automated checks only, no manual review)"
+      ],
+      "timing": "24 hours from automated verification completion"
+    },
+    "safeguards": [
+      "Full @payment_verification audit trail maintained",
+      "Does not reduce standard 48-hour pathway rights",
+      "Subject to @gradual_transition pilot phase (30 days, 10% of contributors)",
+      "Fee waiver for documented financial hardship"
+    ],
+    "relationship_to_existing_terms": {
+      "extends": "@fair_compensation timing_requirements",
+      "integrates": "@payment_verification for audit compliance"
+    },
+    "aligns_with": [
+      "@labor_primacy",
+      "@individual_consideration",
+      "@economic_stability",
+      "@gradual_transition"
+    ]
   }
 }
