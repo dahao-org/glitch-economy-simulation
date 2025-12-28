@@ -164,5 +164,58 @@
       "applies": "Worker claims unpaid hours but platform controls time-tracking logs worker cannot access",
       "does_not_apply": "Dispute over publicly visible contribution metrics on blockchain"
     }
+  },
+  "@gradual_transition": {
+    "version": "1.0.0",
+    "statement": "Policy changes affecting contributor welfare must be implemented through phased timelines with clear milestones, ensuring stakeholders can adapt without disruption.",
+    "locked": false,
+    "uses_terms": [
+      "@fair_compensation",
+      "@contribution_assessment"
+    ],
+    "tiered_timelines": {
+      "standard_changes": {
+        "duration": "90 days minimum",
+        "applies_to": "Policy modifications affecting compensation formulas, governance weights, or stakeholder classifications",
+        "milestones": [
+          "30-day: announce and document",
+          "60-day: pilot with subset",
+          "90-day: full implementation"
+        ]
+      },
+      "minor_adjustments": {
+        "duration": "30 days minimum",
+        "applies_to": "Process improvements, documentation updates, non-material parameter changes",
+        "milestones": [
+          "15-day: announce",
+          "30-day: implement"
+        ]
+      },
+      "protection_expansions": {
+        "duration": "14 days minimum",
+        "applies_to": "Changes that only ADD contributor protections without reducing any existing rights",
+        "rationale": "Per @protection_asymmetry, expansions face lower barriers"
+      }
+    },
+    "emergency_exception": {
+      "trigger": "Documented active exploitation per @exploitation indicators with 66% governance consensus",
+      "minimum_timeline": "7 days",
+      "requirements": [
+        "Evidence meets verification standards",
+        "Harm is ongoing, not historical",
+        "Delayed action would cause measurable additional harm"
+      ]
+    },
+    "safeguards": [
+      "Transition timelines cannot be used to delay @fair_compensation payment timing requirements",
+      "Milestones must include stakeholder feedback mechanisms",
+      "Failed milestones trigger review, not automatic continuation"
+    ],
+    "aligns_with": [
+      "@democratic_evolution",
+      "@protection_asymmetry",
+      "@economic_stability",
+      "@proportionality"
+    ]
   }
 }
