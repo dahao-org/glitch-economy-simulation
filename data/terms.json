@@ -481,5 +481,27 @@
       "@economic_stability",
       "@gradual_transition"
     ]
+  },
+  "@validator_commission_cap": {
+    "version": "1.0.0",
+    "definition": "Maximum commission rate validators may charge delegators, protecting staker compensation from excessive extraction.",
+    "cap": {
+      "maximum_rate": "10%",
+      "rationale": "Balances validator operational costs with delegator fair compensation per @contribution_axiom"
+    },
+    "grandfathering": {
+      "existing_validators": "180-day transition period from enactment",
+      "reduction_schedule": "Linear monthly reduction toward cap",
+      "hardship_exception": "Documented operational costs via governance proposal"
+    },
+    "enforcement": {
+      "new_validators": "Cap applies immediately upon registration",
+      "violations": "Flagged in governance dashboard"
+    },
+    "aligns_with": [
+      "@fair_compensation",
+      "@contribution_axiom",
+      "@labor_primacy"
+    ]
   }
 }
