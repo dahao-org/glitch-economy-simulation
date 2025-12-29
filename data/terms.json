@@ -454,8 +454,8 @@
     ]
   },
   "@expedited_payment_option": {
-    "version": "1.0.0",
-    "definition": "An opt-in mechanism allowing contributors to receive verified compensation within 24 hours, with proportional tradeoffs.",
+    "version": "1.1.0",
+    "definition": "An opt-in mechanism allowing contributors to receive verified compensation within 24 hours, with proportional tradeoffs and expanded accessibility.",
     "components": {
       "eligibility": "Contributors with verified contributions (Tier A or B)",
       "request_method": "Flag contribution as expedited-eligible at submission",
@@ -465,16 +465,22 @@
       ],
       "timing": "24 hours from automated verification completion"
     },
+    "fee_waiver_provisions": {
+      "categories": [
+        "Documented financial hardship (self-attestation with good-faith declaration)",
+        "First-time contributors (onboarding support)",
+        "Small contributions below threshold (10 GLITCH equivalent)",
+        "Emergency circumstances (medical, housing, family crisis)"
+      ],
+      "verification": "Simple attestation form; pattern abuse triggers @proportionality review",
+      "quarterly_cap": "Fee waivers limited to 15% of expedited requests to maintain treasury sustainability"
+    },
     "safeguards": [
-      "Full @payment_verification audit trail maintained",
+      "Full audit trail maintained",
       "Does not reduce standard 48-hour pathway rights",
       "Subject to @gradual_transition pilot phase (30 days, 10% of contributors)",
-      "Fee waiver for documented financial hardship"
+      "Quarterly review of waiver utilization per @economic_stability"
     ],
-    "relationship_to_existing_terms": {
-      "extends": "@fair_compensation timing_requirements",
-      "integrates": "@payment_verification for audit compliance"
-    },
     "aligns_with": [
       "@labor_primacy",
       "@individual_consideration",
