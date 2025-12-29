@@ -565,5 +565,34 @@
       "@individual_consideration",
       "@contribution_axiom"
     ]
+  },
+  "@exploitation_rebuttable_presumption": {
+    "version": "1.0.0",
+    "definition": "In compensation disputes where repeat violation presumption applies OR severe @evidence_accessibility asymmetry is documented, exploitation is presumed until rebutted by preponderance of evidence.",
+    "triggers": [
+      "Repeat violation presumption active (3+ verified violations in 12 months)",
+      "Severe @evidence_accessibility asymmetry documented (tier 3 response)"
+    ],
+    "standard": {
+      "presumption": "Exploitation presumed",
+      "rebuttal": "Preponderance of evidence showing fair compensation",
+      "burden": "On party with documented pattern or controlling evidence"
+    },
+    "safeguards": [
+      "Only applies when trigger conditions are met, not universally",
+      "Presumption is rebuttable, not conclusive",
+      "Does not apply to disputes with equal evidence access",
+      "Subject to @proportionality in remedy determination",
+      "Redemption via clean period (12 months without violations)"
+    ],
+    "relationship_to_existing_terms": {
+      "triggered_by": "@evidence_accessibility severe tier",
+      "process": "@dispute_resolution"
+    },
+    "aligns_with": [
+      "@labor_primacy",
+      "@evidence_based",
+      "@proportionality"
+    ]
   }
 }
